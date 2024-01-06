@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/styles/style.css">
+
     <title>Document</title>
 </head>
 <body>
-    <h2>
-        РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ
-    </h2>
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide1</div>
-            <div class="swiper-slide">Slide2</div>
-            <div class="swiper-slide">Slide3</div>
-            <div class="swiper-slide">Slide4</div>
-            <div class="swiper-slide">Slide5</div>
+    <div class="services-block">
+        <div class="services-block__container">
+            <h2 class="services-block__title">
+                РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ
+            </h2>
+            <div class="services-block__content mobile-slider swiper">
+                <div class="swiper-wrapper mobile-slider__wrapper">
+                    <a href="#" class="mobile-slider__item swiper-slide">
+                        <img class="item_picture" src="assets/img/Bitmap-1.svg" alt="">
+                        <div class="item_circle">
+                            <div class="item_arrow"></div>
+                        </div>
+                        
+                    </a>
+                    <a href="#" class="mobile-slider__item swiper-slide">
+                        <img class="item_picture" src="assets/img/Bitmap-2.svg" alt="">
+                        <div class="item_circle">
+                            <div class="item_arrow"></div>
+                        </div>
+                    </a>
+                    <a href="#" class="mobile-slider__item swiper-slide">
+                        <img class="item_picture" src="assets/img/Bitmap-3.svg" alt="">
+                        <div class="item_circle">
+                            <div class="item_arrow"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-        <div class="swiper-scrollbar"></div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/swiper.js"></script>
+
 </body>
 </html>

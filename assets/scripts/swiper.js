@@ -1,6 +1,12 @@
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
-
-const swiper = new Swiper(...);
+const swiper = new Swiper('.mobile-slider', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+  });
