@@ -43,9 +43,15 @@ html {
 }
 .services-block__title {
   color: #7E7E82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
   padding: 16px;
   background: linear-gradient(90deg, #F8F8F8 0%, #FFF 98.61%);
-  font-size: 16px;
 }
 .services-block__expand-button {
   margin-left: 24px;
