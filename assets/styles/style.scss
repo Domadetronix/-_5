@@ -109,41 +109,26 @@ html {
 
     }
     &_circle{
+        
+    }
+    &_arrow {
         position: relative;
         width: 40px;
         height: 40px;
         border: 2px solid #FF3E79;
         border-radius: 50%;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-top: 2px solid #FF3E79;
+            border-right: 2px solid #FF3E79;
+            display: inline-block;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
     }
-    &_arrow {
-        margin-left: 15.5px;
-        position: absolute;
-        color: #FF3E79;
-        font-family: Arial sans-serif;
-        font-size: 8px;
-        text-decoration: none;
-        &:before, &:after {
-        content:"";
-        background: #FF3E79;
-        display: block;
-        height: 2px;
-        position: absolute;
-        width: 8px;
-        }
-        &:before {
-            -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-            top: 14.9px;
-            border-radius: 2px 4px 4px 4px;
-        }
-        &:after {
-            top: 19.6px;
-            -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-            border-radius: 4px 4px 2px 4px;
-        }
-}
-        
 }
 .swiper-pagination{
     position: relative;

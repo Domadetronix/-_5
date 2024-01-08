@@ -97,38 +97,23 @@ html {
 .item_picture {
   align-self: center;
 }
-.item_circle {
+.item_arrow {
   position: relative;
   width: 40px;
   height: 40px;
   border: 2px solid #FF3E79;
   border-radius: 50%;
 }
-.item_arrow {
-  margin-left: 15.5px;
+.item_arrow::after {
   position: absolute;
-  color: #FF3E79;
-  font-family: Arial sans-serif;
-  font-size: 8px;
-  text-decoration: none;
-}
-.item_arrow:before, .item_arrow:after {
   content: "";
-  background: #FF3E79;
-  display: block;
-  height: 2px;
-  position: absolute;
-  width: 8px;
-}
-.item_arrow:before {
-  transform: rotate(45deg);
-  top: 14.9px;
-  border-radius: 2px 4px 4px 4px;
-}
-.item_arrow:after {
-  top: 19.6px;
-  transform: rotate(-45deg);
-  border-radius: 4px 4px 2px 4px;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #FF3E79;
+  border-right: 2px solid #FF3E79;
+  display: inline-block;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
 
 .swiper-pagination {
